@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mini App ServiceA View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MiniAppServiceAViewController" id="Y6W-OH-hqX" customClass="MiniAppServiceAViewController" customModule="MiniAppServiceA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MiniAppServiceAViewController in MiniApp Service A" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z9d-I1-eDz">
+                                <rect key="frame" x="16" y="405.66666666666669" width="361" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5S-jO-07Z">
+                                <rect key="frame" x="96.666666666666686" y="506.33333333333326" width="200" height="60"/>
+                                <color key="backgroundColor" red="0.1215686275" green="0.64313725489999995" blue="0.51764705879999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="aTz-W0-GVK"/>
+                                    <constraint firstAttribute="width" constant="200" id="qp5-0O-waI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Go to SubVC">
+                                    <color key="baseForegroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BZB-dJ-JWn" kind="show" id="Tl3-ms-AMb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome  MiniApp Service A" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SnB-Ut-sMg">
+                                <rect key="frame" x="37.333333333333343" y="139" width="318.66666666666663" height="28.666666666666657"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SnB-Ut-sMg" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="80" id="K7i-4t-xj4"/>
+                            <constraint firstItem="z9d-I1-eDz" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="16" id="MpL-7i-i3z"/>
+                            <constraint firstAttribute="trailing" secondItem="z9d-I1-eDz" secondAttribute="trailing" constant="16" id="a0g-cQ-Tje"/>
+                            <constraint firstItem="z9d-I1-eDz" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="bqp-za-7Dj"/>
+                            <constraint firstItem="z9d-I1-eDz" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="nxN-4f-NKg"/>
+                            <constraint firstItem="q5S-jO-07Z" firstAttribute="top" secondItem="z9d-I1-eDz" secondAttribute="bottom" constant="60" id="pyV-BK-d24"/>
+                            <constraint firstItem="q5S-jO-07Z" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="sZs-RD-Cxi"/>
+                            <constraint firstItem="SnB-Ut-sMg" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="xr3-Nq-lvH"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2" y="-32"/>
+        </scene>
+        <!--Sub View Controller-->
+        <scene sceneID="tlY-bG-JbG">
+            <objects>
+                <viewController storyboardIdentifier="SubViewController" modalPresentationStyle="currentContext" id="BZB-dJ-JWn" customClass="SubViewController" customModule="MiniAppServiceA" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gE4-pB-B9y">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SubViewController in MiniApp Service A" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ftc-vS-q9X">
+                                <rect key="frame" x="34.666666666666657" y="416" width="323.66666666666674" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rlE-zN-wNj"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ftc-vS-q9X" firstAttribute="centerY" secondItem="gE4-pB-B9y" secondAttribute="centerY" id="Gbd-H7-nsl"/>
+                            <constraint firstItem="ftc-vS-q9X" firstAttribute="centerX" secondItem="gE4-pB-B9y" secondAttribute="centerX" id="qpb-AR-jTL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="PI8-2Z-iXT"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vTy-QR-jKy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="810" y="-31"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -8,11 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		FBE8A3C129823538005BE645 /* MiniAppServiceA.h in Headers */ = {isa = PBXBuildFile; fileRef = FBE8A3C029823538005BE645 /* MiniAppServiceA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBE8A3CF298235BB005BE645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBE8A3CE298235BB005BE645 /* Main.storyboard */; };
+		FBE8A3D12982363C005BE645 /* MiniAppServiceAViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE8A3D02982363C005BE645 /* MiniAppServiceAViewController.swift */; };
+		FBE8A3D32982365F005BE645 /* LauncherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE8A3D22982365F005BE645 /* LauncherService.swift */; };
+		FBE8A400298237D2005BE645 /* ConnectionGateWaySAT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBE8A3FE298237B6005BE645 /* ConnectionGateWaySAT.framework */; };
+		FBE8A401298237D2005BE645 /* ConnectionGateWaySAT.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = FBE8A3FE298237B6005BE645 /* ConnectionGateWaySAT.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		FBE8A404298239D8005BE645 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE8A403298239D8005BE645 /* SubViewController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FBE8A3FD298237B6005BE645 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FBE8A3F9298237B6005BE645 /* ConnectionGateWaySAT.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = FBE8A35029822B7A005BE645;
+			remoteInfo = ConnectionGateWaySAT;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FBE8A402298237D2005BE645 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				FBE8A401298237D2005BE645 /* ConnectionGateWaySAT.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		FBE8A3BD29823538005BE645 /* MiniAppServiceA.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MiniAppServiceA.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBE8A3C029823538005BE645 /* MiniAppServiceA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MiniAppServiceA.h; sourceTree = "<group>"; };
+		FBE8A3CE298235BB005BE645 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FBE8A3D02982363C005BE645 /* MiniAppServiceAViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniAppServiceAViewController.swift; sourceTree = "<group>"; };
+		FBE8A3D22982365F005BE645 /* LauncherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LauncherService.swift; sourceTree = "<group>"; };
+		FBE8A3F9298237B6005BE645 /* ConnectionGateWaySAT.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ConnectionGateWaySAT.xcodeproj; path = ../../ConnectionGateWaySAT/ConnectionGateWaySAT.xcodeproj; sourceTree = "<group>"; };
+		FBE8A403298239D8005BE645 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -20,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE8A400298237D2005BE645 /* ConnectionGateWaySAT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -31,6 +67,7 @@
 			children = (
 				FBE8A3BF29823538005BE645 /* MiniAppServiceA */,
 				FBE8A3BE29823538005BE645 /* Products */,
+				FBE8A3FF298237D2005BE645 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -45,9 +82,37 @@
 		FBE8A3BF29823538005BE645 /* MiniAppServiceA */ = {
 			isa = PBXGroup;
 			children = (
+				FBE8A3D22982365F005BE645 /* LauncherService.swift */,
 				FBE8A3C029823538005BE645 /* MiniAppServiceA.h */,
+				FBE8A3CD29823594005BE645 /* Scenes */,
+				FBE8A3F9298237B6005BE645 /* ConnectionGateWaySAT.xcodeproj */,
 			);
 			path = MiniAppServiceA;
+			sourceTree = "<group>";
+		};
+		FBE8A3CD29823594005BE645 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				FBE8A3CE298235BB005BE645 /* Main.storyboard */,
+				FBE8A3D02982363C005BE645 /* MiniAppServiceAViewController.swift */,
+				FBE8A403298239D8005BE645 /* SubViewController.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		FBE8A3FA298237B6005BE645 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FBE8A3FE298237B6005BE645 /* ConnectionGateWaySAT.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FBE8A3FF298237D2005BE645 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -72,6 +137,7 @@
 				FBE8A3B929823538005BE645 /* Sources */,
 				FBE8A3BA29823538005BE645 /* Frameworks */,
 				FBE8A3BB29823538005BE645 /* Resources */,
+				FBE8A402298237D2005BE645 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -93,6 +159,7 @@
 				TargetAttributes = {
 					FBE8A3BC29823538005BE645 = {
 						CreatedOnToolsVersion = 14.2;
+						LastSwiftMigration = 1420;
 					};
 				};
 			};
@@ -107,6 +174,12 @@
 			mainGroup = FBE8A3B329823538005BE645;
 			productRefGroup = FBE8A3BE29823538005BE645 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = FBE8A3FA298237B6005BE645 /* Products */;
+					ProjectRef = FBE8A3F9298237B6005BE645 /* ConnectionGateWaySAT.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				FBE8A3BC29823538005BE645 /* MiniAppServiceA */,
@@ -114,11 +187,22 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		FBE8A3FE298237B6005BE645 /* ConnectionGateWaySAT.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ConnectionGateWaySAT.framework;
+			remoteRef = FBE8A3FD298237B6005BE645 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		FBE8A3BB29823538005BE645 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE8A3CF298235BB005BE645 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +213,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE8A404298239D8005BE645 /* SubViewController.swift in Sources */,
+				FBE8A3D12982363C005BE645 /* MiniAppServiceAViewController.swift in Sources */,
+				FBE8A3D32982365F005BE645 /* LauncherService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,7 +273,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -243,7 +330,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -258,6 +345,8 @@
 		FBE8A3C529823538005BE645 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -268,6 +357,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -278,6 +368,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +377,8 @@
 		FBE8A3C629823538005BE645 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -296,6 +389,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
